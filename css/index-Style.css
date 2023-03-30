@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+@font-face {
+    font-family:srilankan;
+    src: url('../customFonts/Srilankan.ttf');
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/*-----Dashboard Navbar Section-----*/
+.nav-frame{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /*background-color: red;*/
+}
+.logo-section{
+    width:12vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.nav-main-section h3,
+.nav-employees-section h3,
+.nav-clients-section h3,
+.nav-finance-section h3,
+.nav-main-client-section h3{
+    margin-top: 40px;
+    color: #a3aab0;
+    font-size: 15px;
+}
+
+.nav-main-section p a,
+.nav-employees-section p a,
+.nav-clients-section p a,
+.nav-finance-section p a,
+.nav-main-client-section p a{
+    color: #a3aab0;
+    font-size: 13px;
+    padding: 10px 5px;
+    cursor: pointer;
+    margin-bottom: 1px;
+    text-decoration: none !important;
+}
+
+.nav-main-section p,
+.nav-employees-section p,
+.nav-clients-section p,
+.nav-finance-section p{
+    color: #a3aab0;
+    font-size: 13px;
+    padding: 10px 5px;
+    cursor: pointer;
+    margin-bottom: 1px;
+    text-decoration: none !important;
+}
+
+.nav-main-section p:visited,
+.nav-main-section p:hover{
+    color: #fff;
+    background-color: #2b3a49;
+}
+
+.nav-main-section p a:hover{
+    color: #fff;
+}
+
+.nav-employees-section p:visited,
+.nav-employees-section p:hover{
+    color: #fff;
+    background-color: #2b3a49;
+}
+
+.nav-employees-section p a:hover{
+    color: #fff;
+}
+
+.nav-clients-section p:visited,
+.nav-clients-section p:hover{
+    color: #fff;
+    background-color: #2b3a49;
+}
+
+
+.nav-clients-section p a:hover{
+    color: #fff;
+}
+
+.nav-finance-section p:visited,
+.nav-finance-section p:hover{
+    color: #fff;
+    background-color: #2b3a49;
+}
+
+
+.nav-finance-section p a:hover{
+    color: #fff;
+}
+
+
+
+/*---Preloader color end---*/
+
+.emp-registered-list-frame{
+    height: 350px;
+    overflow: auto;
+}
+
+.emp-register-list-widthFix{
+    height: 100px;
+}
+
+.spinner-fix{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+/*----------Over Lay-----*/
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+     display: none;/* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.27);
+    /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    /* Add a pointer on hover */
+}
+
+#collapse-navigation{
+    position: fixed; /* Sit on top of the page content */
+     display: none;/* Hidden by default */
+    width: 50%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2e3e4e;
+    /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    /* Add a pointer on hover */
+}
+
+.main-controller-frame{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----Outer Layer Styles--------*/
+.dashboard-main-frame{
+    height: 100vh;
+    display: flex;
+}
+
+.dashboard-left-navbar{
+    width:15%;
+    background-color: #2e3e4e;
+
+}
+
+.dashboard-main-panel{
+    overflow-y: auto;
+    width:85%;
+
+}
+
+
+
+/*------Section 1 styles------*/
+.section-1{
+    background-color: #fff;
+    height:8vh;
+    width:100%;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+
+
+.section-1-content h1{
+    display: inline-block;
+    font-size: 20px;
+    margin-top:15px;
+}
+
+.section-1-content  span{
+    float: right;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.menu-section{
+    cursor: pointer;
+    display: inline-block;
+}
+
+/*------Section 2 styles------*/
+.section-2{
+    background-color:#fff;
+    height:8vh;
+    width:100%;
+    box-shadow: 0 8px 15px -10px #000;
+}
+
+.section-2-content h2{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+/*------Section 3 styles------*/
+.section-3{
+    background-color:#f0f0f0;
+    min-height:84vh;
+    width:100%;
+    overflow-y: auto;
+}
+
+
+.view-panel-1{
+    /*display: none;*/
+
+}
+/*-----Asset Explorer-----logo*/
+.sl-logo{
+    padding:15px;
+    text-align: center;
+    background-color:#2e3e4e;
+    font-size:18px;
+    border-radius:10px;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.18);
+    color:#ffffff;
+    border:2px solid #ffffff;
+
+}
+/*------Main Summary-----------*/
+
+.main-summary{
+    max-width: 90vw;
+}
+.summary-card{
+    margin-top:30px;
+    width:80%;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px groove rgba(85, 85, 85, 0.24);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 25px;
+}
+
+.card-total-assets{
+    border-right:5px solid #3498DB;
+}
+
+.card-total-divisions{
+    border-right:5px solid #2ECC71;
+}
+.card-total-users{
+    border-right:5px solid #E67E22;
+}
+.summary-card-img{
+    width: 60px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-card-count{
+    width: 70px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-card-count p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.summary-card-text{
+    width:70px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.summary-card-text p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #a3aab0;
+}
+
+.quick-contact-list{
+    max-width: 90vw;
+}
+
+.contact-card{
+    margin-top: 50px;
+    width:100%;
+    min-height:350px;
+    background-color: #fff;
+    border: 1px groove rgba(85, 85, 85, 0.24);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.17);
+    border-radius: 3px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact-header{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: 0px 15px;
+    border-bottom:1px solid #e3e5e7;
+
+}
+
+.search-section{
+    width: 250px;
+    height: 25px;
+    margin-left:70px;
+    margin-top: 15px;
+}
+
+.search-section input{
+    height:25px;
+    font-size: 12px;
+}
+
+
+.contact-header p{
+    color: #a3aab0;
+    font-size: 13px;
+    padding-left:20px;
+    padding-top: 10px;
+}
+
+#select-division{
+    font-size: 12px;
+}
+
+/*##############contact body########################*/
+
+.table-view{
+    padding:0px 15px;
+    height:300px;
+    overflow: auto;
+}
+/*----Divisional table section---*/
+
+.hiddenRow {
+    padding: 0 !important;
+}
+
+
+
+table thead tr th{
+    font-size: 14px;
+}
+table tbody tr td{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.row-heading:hover{
+    background-color:#dcdcdc;
+}
+.mini-class{
+    padding-left: 10px;
+    font-weight:600;
+}
+
+/*---------*/
+.divisional-tree{
+    height:auto;
+    width:100%;
+
+}
+.chart {
+    min-height:550px;
+    width:100%;
+    background-color:#ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+.node:first-child{
+    background-color: #555555;
+}
+.node {
+   color: #555;
+    border: 3px solid #006DC3;
+    border-radius: 3px;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    width:230px;
+
+}
+
+
+.node p {
+    font-size:12px;
+    line-height: 20px;
+    height:auto;
+    font-weight:600;
+    padding: 3px;
+    margin: 0;
+    text-align: center;
+}
+
+.root-node{
+    background-color:#555555;
+    color:#FFFF;
+}
+
+
+
+/*----Handle Tree Modal Content-----*/
+#tree-modal-title{
+    font-size:14px;
+    padding-top: 15px;
+    width:350px;
+}
+
+/*---Pie Chart---*/
+#chartdiv {
+    width: 100%;
+    height: 300px;
+}
+
+.multi-piechart{
+    padding:0px 15px;
+    height:650px;
+    overflow: auto;
+}
+
+.modal-header-frame{
+    display: flex;
+    padding:0;
+    margin: 0;
+}
+
+
+.modal-table-outerframe{
+    border:2px solid #000000;
+    border-radius:10px;
+}
+
+.modal-header{
+    padding: 10px 1.2rem 2px 2rem !important;
+    background-color:#2b3a49;
+    color:#ffffff;
+}
+
+.excel-gen-fire{
+    border:none;
+    background-color:transparent;
+}
+
+.excel-gen-fire span{
+    color:#ffffff;
+    font-size:10px;
+}
+
+.export-excel-section{
+    margin-left:160px;
+}
+
+
+
+
+
+
+
+
+
+/*-----Media Queries------*/
+
+@media (max-width:900px) {
+    .dashboard-left-navbar{
+        display: none;
+    }
+
+    .section-1,.section-2,.section-3{
+        width: 100vw;
+    }
+
+
+
+
+
+}
+
+@media (min-width:900px) {
+    .menu-section{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
